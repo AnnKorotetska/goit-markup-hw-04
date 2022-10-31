@@ -155,10 +155,10 @@ img {
   fill: var(--primary-text-color);
 }
 
-.header-mail:hover,
-.header-tell:hover,
-.header-mail:focus,
-.header-tell:focus {
+.header-contact-link:hover .header-mail,
+.header-contact-link:hover .header-tell,
+.header-contact-link:focus .header-mail,
+.header-contact-link:focus .header-tell {
   fill: var(--accent-color);
 }
 
@@ -177,8 +177,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 200px 0px 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../img/hero-img.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
@@ -248,20 +250,19 @@ img {
 }
 
 .facts-icons {
-  color: var(--title-text-color);  
+  color: var(--title-text-color);
   background-color: #f5f4fa;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   height: 120px;
-  }
-  
-  .benefits-icon {
-  fill: currentColor;
-  }
+}
 
+.benefits-icon {
+  fill: currentColor;
+}
 
 .facts-list {
   display: flex;
@@ -429,9 +430,10 @@ footer {
   margin-bottom: 9px;
 }
 
-.footer-address {}
+.footer-address {
+}
 
-.footer-address>.link:not(:last-child) {
+.footer-address > .link:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -532,9 +534,7 @@ b {
   box-sizing: border-box;
   width: calc((100% - 60px) / 3);
   background-color: var(--primary-white-color);
-
 }
-
 
 .flex-cards {
   gap: 30px;
@@ -544,7 +544,6 @@ b {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: transparent;
-
 }
 
 .cards-title {
@@ -569,9 +568,9 @@ b {
 
 .cards-link-shadow:hover,
 .cards-link-shadow:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 
 .footer-part {
   color: var(--primary-white-color);
